@@ -9,8 +9,9 @@
 #include<QLayout>
 #include<QBoxLayout>
 #include <QStyle>
-#include <QDesktopWidget>
 #include<QFile>
+
+#include<QtWidgets>
 
 int main(int argc, char *argv[])
 {
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
     processLabel->setMovie(movie);
     processLabel->setWindowFlags(Qt::FramelessWindowHint);
     processLabel->setAlignment(Qt::AlignCenter);
-    processLabel->setGeometry(  QStyle::alignedRect(Qt::LeftToRight,Qt::AlignCenter,processLabel->size(),qApp->desktop()->availableGeometry())         );
+    processLabel->setGeometry(  QStyle::alignedRect(Qt::LeftToRight,Qt::AlignCenter,processLabel->size(),qApp->screens()[0]->availableGeometry())         );
 
     movie->start();
     processLabel->show();

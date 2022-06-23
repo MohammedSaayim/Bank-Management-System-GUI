@@ -360,11 +360,11 @@ QStringList MainWindow::return_sorted_list(QStringList unsorted_list)
 
 
 //Tags:display specific account,search account
-void MainWindow::on_pushButton_SearchAcc_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(5);
+//void MainWindow::on_pushButton_SearchAcc_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(5);
 
-}
+//}
 
 
 
@@ -571,6 +571,7 @@ void MainWindow::on_pushButton_SearchAcc_clicked(bool isClicked)
         CCDisplayFlag= false;
     }
     emit(CCDisplayFlag);*/
+     ui->stackedWidget->setCurrentIndex(5);
     emit(isClicked);
 }
 
