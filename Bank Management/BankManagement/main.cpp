@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
 
     //user code
     //set the app stylesheett
-    QFile styleSheetFile("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/QtTheme/Fibrary.qss");
+    QFile styleSheetFile("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/QtTheme/Fibrary.qss");
 
     styleSheetFile.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(styleSheetFile.readAll());
     a.setStyleSheet(styleSheet);
 
 
-    QMovie *movie = new QMovie("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/images/dsceComplex.gif");
+    QMovie *movie = new QMovie("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/images/dsceComplex.gif");
     QLabel *processLabel = new QLabel(nullptr);
 
     processLabel->resize(1272,717);  // to make sure its large enough

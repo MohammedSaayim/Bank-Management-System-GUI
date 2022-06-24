@@ -65,8 +65,8 @@ private slots:
 
     void setCCDisplay(bool);
 
-signals:
-    void on_pushButton_SearchAcc_clicked(bool);
+//signals:
+//    void on_pushButton_SearchAcc_clicked(bool);
 
 private:
     Ui::MainWindow *ui;
