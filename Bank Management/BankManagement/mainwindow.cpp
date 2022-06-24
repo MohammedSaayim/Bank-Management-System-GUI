@@ -42,15 +42,6 @@ void MainWindow::on_pushButton_Submit_clicked()
 {
     secondDialog = new secDialog(this);
     secondDialog->show();
-
-
-//safe to delete below code
-    QString cc_num= cc_num_gen();
-    QString cvv= QString::number(cvv_gen());
-    QMessageBox msgBox;             //
-    msgBox.setText("cc number is "+cc_num+"\n CVV is: "+cvv);     //
-    msgBox.exec();                  //
-//safe to delete above code
 }
 */
 
@@ -91,7 +82,7 @@ account ac;
 void MainWindow::write_account()
 {
 
-    QFile File("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/output file/accounts.txt");
+    QFile File("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/output file/accounts.txt");
 
     QTextStream outFile(&File);
     //open file in binary mode to add data (ios::app means append)
@@ -151,7 +142,7 @@ void MainWindow::on_pushButton_DispLastCreated_clicked()
     ui->stackedWidget->setCurrentIndex(3);
     ui->plainTextEdit->clear();
 
-    QFile File("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/output file/accounts.txt");
+    QFile File("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/output file/accounts.txt");
 
     if(!File.open(QIODevice::ReadOnly | QFile::Text))
        {
@@ -206,7 +197,7 @@ void MainWindow::on_pushButton_DispSortAcNo_clicked()
 
     ui->plainTextEdit_2->clear();
 //    int count=0;
-    QFile File("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/output file/accounts.txt");
+    QFile File("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/output file/accounts.txt");
     if(!File.open(QIODevice::ReadOnly | QFile::Text))
        {
                QMessageBox::warning(this,"Warning","File not open");
@@ -294,7 +285,7 @@ File.close();
 void MainWindow::display_sorted(QString accNumToSearch)
 {
 //        int count=0;
-        QFile File("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/output file/accounts.txt");
+        QFile File("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/output file/accounts.txt");
         if(!File.open(QIODevice::ReadOnly | QFile::Text))
            {
                    QMessageBox::warning(this,"Warning","File not open");
@@ -374,7 +365,7 @@ void MainWindow::on_pushButton_submitToSearch_clicked()
 
     bool accSearchedFlag=false;
 
-    QFile File("C:/Users/mdsaa/Documents/QtApps/Bank Management/BankManagement/output file/accounts.txt");
+    QFile File("C:/Users/Mohammed Saayim K/Documents/codes/Bank-Management-System-GUI/Bank Management/BankManagement/output file/accounts.txt");
 
     if(!File.open(QIODevice::ReadOnly | QFile::Text))
        {
@@ -559,20 +550,11 @@ void MainWindow::on_pushButton_validateCC_clicked()
 }
 
 //search button isClicked signal definition
-void MainWindow::on_pushButton_SearchAcc_clicked(bool isClicked)
-{/*
-    bool CCDisplayFlag;
-    if(isClicked)
-    {
-        CCDisplayFlag= true;
-    }
-    else
-    {
-        CCDisplayFlag= false;
-    }
-    emit(CCDisplayFlag);*/
-    emit(isClicked);
-}
+//void MainWindow::on_pushButton_SearchAcc_clicked(bool isClicked)
+//{
+//     ui->stackedWidget->setCurrentIndex(5);
+//     emit(isClicked);
+//}
 
 //setting display of cc card in search acc window to true or false
 void MainWindow::setCCDisplay(bool isClicked)
@@ -586,3 +568,5 @@ void MainWindow::setCCDisplay(bool isClicked)
         ui->groupBox_creditCardAtSearch->setVisible(true);
     }
 }
+
+

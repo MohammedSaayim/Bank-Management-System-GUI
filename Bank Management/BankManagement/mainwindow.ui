@@ -36,7 +36,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QWidget" name="layoutWidget">
@@ -159,7 +159,6 @@
          <font>
           <family>Times New Roman</family>
           <pointsize>30</pointsize>
-          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -495,7 +494,6 @@
           <font>
            <family>Times New Roman</family>
            <pointsize>11</pointsize>
-           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -504,7 +502,7 @@
          </property>
         </widget>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>430</x>
@@ -520,7 +518,6 @@
             <font>
              <family>Times New Roman</family>
              <pointsize>18</pointsize>
-             <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
@@ -748,7 +745,6 @@
           <font>
            <family>Times New Roman</family>
            <pointsize>11</pointsize>
-           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -757,7 +753,7 @@
          </property>
         </widget>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>260</x>
@@ -885,7 +881,7 @@
          <string>Submit</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>140</x>

@@ -102,7 +102,8 @@ QChar checksum_gen(QString cc_num_str_temp){
                     if(num2>9){
                         num2-=9;
                     }
-                    temp2='0'+num2;
+//                    temp2='0'+num2;
+                    temp2 = static_cast<QChar>(num2);
                     cc_num_str_temp[i]=temp2;
                 }
                 sum+=num2;
@@ -118,7 +119,8 @@ QChar checksum_gen(QString cc_num_str_temp){
     else{
         checksum_int=10-mod;
     }
-    temp3='0'+checksum_int; //convert checksum from int to char
+//    temp3='0'+checksum_int; //convert checksum from int to char
+    temp3 = static_cast<QChar>(checksum_int);
     return(temp3);
 }
 //end of function to generate checksum for cc num gen
