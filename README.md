@@ -1,5 +1,10 @@
-# Bank-Management-System-v2
-This project contains the following features-  
+# Bank-Management-System-GUI
+
+## Screenshots
+[](https://i.imgur.com/SZP9baZ.png)
+[](https://i.imgur.com/a9ybYbU.png)
+
+## Features
 * Credit card number generator and validator 
 * CVV number generator and validator 
 * Store Account details in file
