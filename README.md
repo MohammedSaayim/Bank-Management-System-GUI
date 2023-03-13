@@ -3,8 +3,8 @@
 ## Screenshots
 ![image](https://i.imgur.com/A7mpecr.jpg)
 ![image](https://i.imgur.com/inZ4ZsJ.jpg)
-![image](https://i.imgur.com/SZP9baZ.png)
-![image](https://i.imgur.com/a9ybYbU.png)
+![image](https://i.imgur.com/cKUe01N.jpg)
+![image](https://i.imgur.com/Sd7UujM.jpg)
 ![image](https://i.imgur.com/XciJLjj.jpg)
 
 ## Features
@@ -14,7 +14,10 @@
 * Built in C++ using Qt
 
 ## Installation
-[Install Qt](shorturl.at/cvL56) on your machine
+* [Install Qt](shorturl.at/cvL56) on your machine
+* Download the zip file of code
+* Unzip the file
+* Open BankManagement.pro
 
 ## What's new?
 * Added GUI
