@@ -1,8 +1,11 @@
 # Bank-Management-System-GUI
 
 ## Screenshots
+![image](https://i.imgur.com/A7mpecr.jpg)
+![image](https://i.imgur.com/inZ4ZsJ.jpg)
 ![image](https://i.imgur.com/SZP9baZ.png)
 ![image](https://i.imgur.com/a9ybYbU.png)
+![image](https://i.imgur.com/XciJLjj.jpg)
 
 ## Features
 * Credit card number generator and validator 
